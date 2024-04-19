@@ -4,7 +4,7 @@ use axum::routing::post;
 use serde::{Deserialize, Serialize};
 
 pub fn get_route() -> Router {
-    Router::new().route("/user", post(add_person))
+    Router::new().route("/users", post(add_person))
 }
 
 pub async fn add_person(Json(create_person): Json<CreateUser>) -> (StatusCode, Json<CreateUser>) {
