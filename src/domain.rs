@@ -1,1 +1,1 @@
-pub mod entities;
+pub(crate) mod entities;

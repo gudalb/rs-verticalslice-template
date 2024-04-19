@@ -1,4 +1,4 @@
 pub struct User {
     pub(crate) name: String,
-    pub(crate) age: i8
+    pub(crate) age: i8,
 }

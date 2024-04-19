@@ -8,9 +8,9 @@ pub fn get_route() -> Router {
 }
 
 pub async fn get_person() -> (StatusCode, Json<GetUser>) {
-    let person = GetUser{
+    let person = GetUser {
         age: 20,
-        name: String::from("abbe")
+        name: String::from("abbe"),
     };
 
     (StatusCode::FOUND, Json(person))
@@ -18,6 +18,6 @@ pub async fn get_person() -> (StatusCode, Json<GetUser>) {
 
 #[derive(Serialize)]
 pub struct GetUser {
-    pub name : String,
-    pub age : i8,
+    pub name: String,
+    pub age: i8,
 }
