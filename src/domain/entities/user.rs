@@ -1,0 +1,7 @@
+use serde::Serialize;
+
+#[derive(Serialize)]
+pub struct User {
+    pub(crate) name: String,
+    pub(crate) age: i8
+}
